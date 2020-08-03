@@ -22,6 +22,7 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,700,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
@@ -95,10 +96,10 @@
     
     
     
-            <div class="account-wrap col-md-4 col-md-offset-4">
+            <!-- <div class="account-wrap col-md-4 col-md-offset-4"> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-md-12 col-sm-12">
                             <!-- HTML -->
                             <div class="log-reg" id="account-id">
                                 <h3>Access Your Account</h3>
@@ -106,51 +107,55 @@
                                     <a class="account-title acc-left greener" href="#">I Have an Account</a>
                                     <a class="account-title acc-right" href="register.html">I'm a New Customer</a>
                                 </div>
-                                <div class="clearfix"></div>
+                                <!-- <div class="clearfix"></div> -->
                                 <div class="account-form ">
     
                                     <form class="form-login" method="POST" action="{{ route('login') }}">
                                
                                         <ul class="form-list row">
                                             <li class="col-md-12 col-sm-12">
-                                                <input id="email" type="email"
-                                                    class="form-control"
-                                                    placeholder="Email" name="email"
-                                                    value="Email" required autofocus>
-    
-                                              
+                                                <input id="email" type="email" class="form-control" placeholder="Email" name="email" required autofocus>
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong></strong>
                                                 </span>
-                                                
+
                                             </li>
     
     
                                             <li class="col-md-12 col-sm-12">
-                                                <input id="password" type="password"
-                                                    class="form-control"
-                                                    placeholder="Password" name="password" required>
-    
-                                               
+                                                   <!-- <label class="show-password">
+                                                    <input id="password" type="password"
+                                                        class="form-control"
+                                                        placeholder="Password" name="password" required>
+                                                    </label> -->
+                                                    <input id="password-field" type="password" class="form-control" placeholder="Password" name="password" >
+                                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                        
                                                 <span class="invalid-feedback" role="alert">
                                                  
                                             </li>
     
                                             <li class="col-md-12 col-sm-12">
-                                                <input class="form-check-input" type="checkbox" name="remember"
+                                                <div class="inputLabel">
+                                                <label class="custom-control-label" for="customCheck1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    Check this custom checkbox
+                                                </label>
+                                            </div>
+                                                <!-- <input class="form-check-input" type="checkbox" name="remember"
                                                     id="remember" >
     
                                                 <label class="form-check-label" for="remember">
                                                     Keep me signed in on this computer
-                                                </label>
+                                                </label> -->
                                             </li>
-                                            <li class="col-md-12 col-sm-12 pwd text-right">
+                                            <!-- <li class="col-md-12 col-sm-12 pwd text-right">
                                             
                                                 <a class="btn btn-link forget-pass" href="">
                                                 
                                                 </a>
                                                 
-                                            </li>
+                                            </li> -->
                                         </ul>
     
                                         <div class="buttons-set logins-buttons-set">
@@ -159,9 +164,29 @@
                                             </button>
                                             <span> OR </span>
                                             <ul class="social-login">
-                                                <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
-                                                <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
-                                                <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="36" height="36" rx="4" fill="#3E6787"/>
+                                                        <path d="M24.5745 26.6H21.1165L21.1262 20.9678H22.9485C23.351 20.9678 23.6899 20.6667 23.7372 20.267L23.983 18.1937C23.983 18.1937 23.983 18.1936 23.983 18.1936C24.039 17.7212 23.6699 17.3058 23.1942 17.3058H21.1158V15.9714C21.1158 15.5953 21.1731 15.3904 21.272 15.2728C21.358 15.1707 21.5515 15.0489 22.0621 15.0489H22.0623L23.1068 15.0484H23.1068C23.5452 15.0481 23.9007 14.6927 23.9007 14.2541V12.5058C23.9007 12.0671 23.545 11.7115 23.1063 11.7115H21.4045C20.2863 11.7115 19.3032 12.0541 18.5986 12.7506C17.8927 13.4483 17.5105 14.4572 17.5105 15.7024V17.3058H16.2425C15.8026 17.3058 15.4465 17.6632 15.4482 18.1031L15.4562 20.1765C15.4579 20.6139 15.813 20.9677 16.2505 20.9677H17.5209L17.5112 26.5999H11.4256C10.3069 26.5999 9.4 25.6931 9.4 24.5744V11.4255C9.4 10.3069 10.3069 9.4 11.4256 9.4H24.5744C25.6931 9.4 26.6 10.3068 26.6 11.4255V24.5745C26.6 25.6932 25.6931 26.6 24.5745 26.6Z" stroke="white" stroke-width="0.8"/>
+                                                        </svg>
+                                                        
+                                                    </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M32 0H4C1.79086 0 0 1.79086 0 4V32C0 34.2091 1.79086 36 4 36H32C34.2091 36 36 34.2091 36 32V4C36 1.79086 34.2091 0 32 0Z" fill="#4995D0"/>
+                                                        <path d="M13.7225 23.3729C13.7226 23.3728 13.7228 23.3726 13.4494 23.0807L13.7228 23.3726L14.3827 22.7546L13.4815 22.682C11.9243 22.5564 11.0128 21.8297 10.4834 21.1443C10.27 20.8682 10.1174 20.5965 10.0111 20.3701C10.3562 20.3869 10.6503 20.366 10.8835 20.3333C11.0694 20.3071 11.2166 20.2734 11.3202 20.2451C11.372 20.2309 11.413 20.2181 11.4425 20.2082C11.4573 20.2033 11.4692 20.1991 11.4781 20.1958L11.4894 20.1917L11.4934 20.1901L11.4949 20.1895L11.4956 20.1893L11.4959 20.1892C11.4961 20.1891 11.4962 20.189 11.35 19.8167L11.4962 20.189L12.6746 19.7264L11.4443 19.428C9.69066 19.0027 8.91708 17.9765 8.56448 17.0673C8.40461 16.6551 8.32994 16.2617 8.29662 15.9516C8.57808 16.0635 8.84698 16.1371 9.0724 16.1856C9.26954 16.2281 9.43752 16.2523 9.55757 16.266C9.61769 16.2729 9.66607 16.2771 9.70039 16.2797C9.71755 16.281 9.73123 16.2818 9.74112 16.2824L9.7531 16.2831L9.75691 16.2832L9.75825 16.2833L9.75878 16.2833L9.75901 16.2833C9.75912 16.2833 9.75922 16.2833 9.77572 15.8837L9.75922 16.2833L10.8574 16.3287L10.0452 15.5881C8.46256 14.145 8.19791 12.7617 8.2921 11.7628C8.33816 11.2743 8.47167 10.864 8.59836 10.5695C12.2032 14.6793 17.1672 14.9664 17.5225 14.9815L18.0442 15.0037L17.9298 14.4942C17.8617 14.1914 17.8257 13.8756 17.8257 13.5506C17.8257 11.2449 19.6259 9.4 21.818 9.4C22.9627 9.4 23.9967 9.90032 24.7274 10.7088L24.8953 10.8946L25.1358 10.8246C25.3655 10.7579 25.5873 10.6861 25.798 10.6135L25.7985 10.6133C26.2708 10.45 26.6929 10.2782 27.0372 10.1266C26.8875 10.3557 26.7067 10.5732 26.5177 10.7703C26.1069 11.1988 25.7068 11.4804 25.6611 11.512L25.661 11.5119L25.6513 11.519C25.6544 11.5167 25.6577 11.5144 25.6611 11.5121C25.6649 11.5095 25.6689 11.5069 25.6731 11.5043L25.6852 11.4971L25.6916 11.4936L25.6948 11.4918L25.6965 11.4909L25.6973 11.4905L25.6977 11.4903L25.6979 11.4902L25.698 11.4901C25.6981 11.4901 25.6981 11.4901 25.6982 11.4905L25.7265 11.6066L25.7318 11.6281L25.8822 12.2452C25.8905 12.2452 25.8978 12.245 25.9035 12.2447L25.9042 12.2446H25.9107L25.9313 12.2425C26.3953 12.1944 26.858 12.0917 27.2593 11.9805C27.1634 12.0802 27.0631 12.1804 26.9607 12.2793C26.507 12.7182 26.0675 13.0825 25.9466 13.1811L25.7922 13.307L25.7997 13.506C25.8062 13.6786 25.8097 13.8511 25.8097 14.0246C25.8097 20.983 20.3714 26.6 13.6926 26.6C11.8949 26.6 10.1885 26.1938 8.65403 25.4643C9.9086 25.3847 10.9867 25.0174 11.8177 24.6156C12.4127 24.328 12.8846 24.0211 13.2091 23.785C13.3715 23.6668 13.4975 23.566 13.584 23.4937C13.6273 23.4575 13.6607 23.4284 13.684 23.4078L13.7111 23.3834L13.7189 23.3762L13.7213 23.374L13.7222 23.3732L13.7225 23.3729Z" stroke="white" stroke-width="0.8"/>
+                                                        </svg>
+                                                        
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="36" height="36" rx="4" fill="#CD4D5F"/>
+                                                        <path d="M22.1276 9H13.8724C11.1857 9 9 11.1857 9 13.8724V22.1277C9 24.8143 11.1857 27 13.8724 27H22.1277C24.8143 27 27 24.8143 27 22.1277V13.8724C27 11.1857 24.8143 9 22.1276 9V9ZM25.9448 22.1277C25.9448 24.2324 24.2324 25.9448 22.1276 25.9448H13.8724C11.7676 25.9448 10.0552 24.2324 10.0552 22.1277V13.8724C10.0552 11.7676 11.7676 10.0552 13.8724 10.0552H22.1277C24.2324 10.0552 25.9448 11.7676 25.9448 13.8724V22.1277Z" fill="white"/>
+                                                        <path d="M18 13.0781C15.2861 13.0781 13.0782 15.286 13.0782 17.9998C13.0782 20.7137 15.2861 22.9216 18 22.9216C20.7139 22.9216 22.9218 20.7137 22.9218 17.9998C22.9218 15.286 20.7139 13.0781 18 13.0781ZM18 21.8663C15.8681 21.8663 14.1335 20.1319 14.1335 17.9998C14.1335 15.868 15.8681 14.1334 18 14.1334C20.132 14.1334 21.8665 15.868 21.8665 17.9998C21.8665 20.1319 20.132 21.8663 18 21.8663Z" fill="white"/>
+                                                        <path d="M23.0395 11.3301C22.2375 11.3301 21.5851 11.9825 21.5851 12.7844C21.5851 13.5864 22.2375 14.2389 23.0395 14.2389C23.8414 14.2389 24.4939 13.5864 24.4939 12.7844C24.4939 11.9824 23.8414 11.3301 23.0395 11.3301ZM23.0395 13.1835C22.8195 13.1835 22.6404 13.0044 22.6404 12.7844C22.6404 12.5643 22.8195 12.3853 23.0395 12.3853C23.2596 12.3853 23.4387 12.5643 23.4387 12.7844C23.4387 13.0044 23.2596 13.1835 23.0395 13.1835Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </li>
                                             </ul>
                                         </div>
                                     </form>
@@ -172,7 +197,7 @@
     
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <div class="clearfix space80"></div>
     
             

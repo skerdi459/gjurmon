@@ -1,0 +1,213 @@
+
+.header{
+    width: 100%;
+    background-color: green;
+}
+.businessgood .navbar{
+   
+   max-width: 1500px;
+    margin: auto;
+}
+
+.businessgood .navbar-brand{
+   padding:0 60px;
+}
+.businessgood .input-group{       
+    width: 418px;
+    margin-right: 40px;
+}
+.businessgood .form-group{
+  width: 230px;
+  margin-left: 15px;
+  padding-top: 15px;
+}
+.businessgood .form-group .first-dropdown .form-control{
+    margin-left: 55px;
+}
+.businessgood .form-group.second-dropdown .form-control{
+    background-color: transparent;
+    border: none;
+    width: auto;
+    margin: 0;  
+    padding-left:0 ;
+    color: white;
+}
+.businessgood .fa{
+    color: white;
+}
+.businessgood .fa-bell-o{
+    margin-left: 53px;
+}
+.businessgood .fa-shopping-cart{
+    margin-left: 23px;
+}
+
+.businessgood .myBag{
+    max-width: 100px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 15px;
+    margin-left: 16px;
+    color: #FFFFFF;
+}
+.businessgood .vl {
+    border-left: 1px solid white;
+    height: 35px;
+    margin-left: 15px;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.businessgood .diff-products{
+    text-decoration: none;
+    color: black;
+    padding: 17px 40px ;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
+    opacity: 0.8;
+
+}
+.businessgood .diff-products-first{
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
+    opacity: 0.8;
+
+}
+hr{
+    max-width: 100%;
+}
+.businessgood .diff-products-last{
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
+    opacity: 0.8;
+
+}
+.row{
+    margin: auto;
+}
+.path{
+    padding-left: 15px;
+    margin-top: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.003em;
+    color: #000000;
+    opacity: 0.8;
+
+}
+
+.businessgood .input-group.sort-dropdn .form-control{
+    margin: 0;
+    margin-top: -10px;
+    margin-left: 40px;
+    max-width: 178px !important;
+   
+    background: #E6E6E6;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.003em;
+
+    color: #000000;
+}
+.cards-wrapper{
+    margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-wrapper .card{
+    max-width: 330px;
+   margin-bottom: 40px;
+}
+
+.card-body .fa{
+    width: 13px;
+    height: 13px;
+    margin: 0 2.5px;
+ color: #D8D8D8;
+}
+.card-body .checked .fa{
+    color: #3E6787;
+}
+
+.dollar{
+    float: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.003em;
+
+    color: #3E6787;
+}
+.number{
+    margin-left: 10px;
+}
+.card-title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    margin: 0;
+    color: #000000;
+    padding: 15px 0 0;
+}
+
+.offerts{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0;
+    color: #000000;
+
+    opacity: 0.8;
+}
+
+.address{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0;
+    color: #848484;
+    padding: 5px 0;
+    opacity: 0.8;
+}
