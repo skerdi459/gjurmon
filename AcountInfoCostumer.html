@@ -50,12 +50,33 @@
 
         <div class="body">
             <!-- TOPBAR -->
-            
+            <div class="top_bar"> 
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="tb_center pull-left">
+                                    <ul>
+                                        <li><a href="tel:(+800) 2307 2509 8988">(+800) 2307 2509 8988</a></li>
+                                        <li><a href="mailto:support@smile.com">support@smile.com</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tb_right pull-right">
+                                    <ul>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Register Your Business</a></li>
+                                        <li><a href="#">Albanian</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                    </div>
+                </div>
+            </div>
 
             <!-- HEADER -->
             <header>
                 <nav class="navbar navbar-default">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -79,7 +100,7 @@
 
             <!-- BREADCRUMBS -->
             <div class="bcrumbs">
-                <div class="container">
+                <div class="container-fluid">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li> Account Information</li>
@@ -90,7 +111,7 @@
 
             <!-- MY ACCOUNT -->
             <div class="account-wrap">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
 
                             <div class="col-md-3 col-sm-4 checkout-steps">
@@ -120,32 +141,41 @@
                             <div id="account-id">
                                 <h4 class="account-title">Change Your Personal Details</h4>                                                                  
                                 <div class="account-form2">
-                                    <form id="form">                                           
-                                        <ul class="form-list2 row">
-                                            <li class="col-md-6 col-sm-6">
-                                                <label >First Name </label>
-                                                <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
-                                                <label >Last Name</label>
-                                                <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
-                                                <label >Email </label>
-                                                <input required type="text" class="input-text">
-                                            </li>                                                
-                                            <li class="col-md-6 col-sm-6">
-                                                <label >Phone Number </label>
-                                                <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
-                                                <label>Fax</label>
-                                                <input type="text" class="input-text">
-                                            </li>
-                                        </ul>
-                                        <div class="buttons-set">
-                                            <button class="btn-green" type="submit"><span><span>Update</span></span></button>
-                                        </div>
+                                    <form id=form-id >                                           
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <label for="firstName">First Name</label>
+                                              <input type="text" class="form-control" id="firstName" placeholder="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <label for="lastName">Last Name</label>
+                                              <input type="text" class="form-control" id="lastName" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <label for="email">Email</label>
+                                              <input type="email" class="form-control" id="email" placeholder="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <label for="phone">Phone Number</label>
+                                              <input type="text" class="form-control" id="phone" placeholder="">
+                                            </div>
+                                          </div>
+                                          <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <label for="fax">Fax</label>
+                                              <input type="text" class="form-control" id="fax" placeholder="">
+                                            </div>
+                                          
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn-green update-button" type="submit">Update</button>
+                                            </div>
+                                          
+                                          </div>
+                                          
                                     </form>
                                 </div>                                
                             </div>
@@ -161,7 +191,7 @@
 
             <!-- FOOTER -->
             <footer>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3 col-sm-3 widget-footer">
                             <h5>About Store</h5>
@@ -223,7 +253,7 @@
 
             <!-- FOOTER COPYRIGHT -->
             <div class="footer-bottom">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-7 col-sm-7">
                             <ul class="flinks">

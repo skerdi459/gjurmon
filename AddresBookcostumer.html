@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="js/vendors/isotope/isotope.css">
         <link rel="stylesheet" href="js/vendors/slick/slick.css">
         <link rel="stylesheet" href="js/vendors/rs-plugin/css/settings.css">
-        <link rel="stylesheet" href="js/vendors/select/jquery.selectBoxIt.css">
+        <!-- <link rel="stylesheet" href="js/vendors/select/jquery.selectBoxIt.css"> -->
         <link rel="stylesheet" href="css/subscribe-better.css">
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css">
         <link rel="stylesheet" href="css/style.css">
@@ -50,57 +50,25 @@
 
         <div class="body">
             <!-- TOPBAR -->
-            <div class="top_bar">
-                <div class="container">
+            <div class="top_bar"> 
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="row">
                             <div class="col-md-12">
-                                <div class="tb_left pull-left">
-                                    <p>Welcome to our online store !</p>
-                                </div>
                                 <div class="tb_center pull-left">
                                     <ul>
-                                        <li><i class="fa fa-phone"></i> Hotline: <a href="#">(+800) 2307 2509 8988</a></li>
-                                        <li><i class="fa fa-envelope-o"></i> <a href="#">online support@smile.com</a></li>
+                                        <li><a href="tel:(+800) 2307 2509 8988">(+800) 2307 2509 8988</a></li>
+                                        <li><a href="mailto:support@smile.com">support@smile.com</a></li>
                                     </ul>
                                 </div>
                                 <div class="tb_right pull-right">
                                     <ul>
-                                        <li>
-                                            <div class="tbr-info">
-                                                <span>Account <i class="fa fa-caret-down"></i></span>
-                                                <div class="tbr-inner">
-                                                    <a href="my-account.html">My Account</a>
-                                                    <a href="#">My Wishlist</a>
-                                                    <a href="#">Checkout</a>
-                                                    <a href="#">Login</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tbr-info">
-                                                <span><img src="images/basic/flag1.png" alt=""/>&nbsp;English <i class="fa fa-caret-down"></i></span>
-                                                <div class="tbr-inner">
-                                                    <a href="#"><img src="images/basic/flag1.png" alt=""/>English</a>
-                                                    <a href="#"><img src="images/basic/flag2.png" alt=""/>French</a>
-                                                    <a href="#"><img src="images/basic/flag3.png" alt=""/>German</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tbr-info">
-                                                <span>US Dollar <i class="fa fa-caret-down"></i></span>
-                                                <div class="tbr-inner">
-                                                    <a href="#">&euro; Euro</a>
-                                                    <a href="#">&pound; Pound</a>
-                                                    <a href="#">&yen; Yen</a>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Register Your Business</a></li>
+                                        <li><a href="#">Albanian</a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -132,7 +100,7 @@
 
             <!-- BREADCRUMBS -->
             <div class="bcrumbs">
-                <div class="container">
+                <div class="container-fluid">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li>Address Book</li>
@@ -143,7 +111,7 @@
 
             <!-- MY ACCOUNT -->
             <div class="account-wrap">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                             <div class="col-sm-4 col-md-3  checkout-steps">
                                     <!-- <h6>Account</h6> -->
@@ -152,18 +120,14 @@
                                                     <li><a href="AcountInfoCostumer.html">  Account Information </a></li>
                                                                                          
                                                     <li><a href="ChangePwCpostmer.html">  Change Password</a></li>
-                                                    <li><a href="AddresBookcostumer.html"> Address Books</a></li>
+                                                    <li class="active"><a href="AddresBookcostumer.html"> Address Books</a></li>
                                                     <li><a href="OrderHistoryCostmer.html">  Order History</a></li>
                                                     
                                                     <li><a href="ReturnCostumer.html">  Returns Requests</a></li>
                                                     <!-- <li><br></li>
                                                     <li><br></li>
                                                     <li><br></li> -->
-                                                    <li>
-                                                            
-                                                                    <a style="margin-top: 72px;" href="" >Sign out</a>
-                                                              
-                                                        </li>
+                                                    <li> <a style="margin-top: 72px;" href="" >Sign out</a></li>
                                                 
                                                 </ul>                               
                                     </div>
@@ -174,47 +138,56 @@
                                 <h4 class="account-title">Change Your Address</h4>                                                                  
                                 <div class="account-form2">
                                     <form id="shipping-zip-form">                                        
-                                        <ul class="form-list2 row">
-                                            <li class="col-md-6 col-sm-6">
+                                        <div class="form-row">
+                                            <div class="form-group  form-group col-md-6 col-sm-6">
                                                 <label >Address 1 <em>*</em></label>
                                                 <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
+                                            </div>
+                                            <div class="form-group col-md-6 col-sm-6">
                                                 <label >Address 2</label>
                                                 <input type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
-                                                <label>Country</label>
-                                                <select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 col-sm-6">
+                                                <label for="country">Country</label>
+                                                <select id="country" class="form-control">
                                                     <option>Country 1</option>
                                                     <option>Country 2</option>
                                                     <option>Country 3</option>
                                                 </select>
-                                            </li>                                                
-                                            <li class="col-md-6 col-sm-6">
+                                            </div>                                                
+                                            <div class="form-group col-md-6 col-sm-6">
                                                 <label>City</label>
-                                                <select>
+                                                <select class="form-control">
                                                     <option>City 1</option>
                                                     <option>City 2</option>
                                                     <option>City 3</option>
                                                 </select>
-                                            </li>                                               
-                                            <li class="col-md-6 col-sm-6">
+                                            </div>
+                                        </div> 
+                                        <div class="form-row">                                              
+                                            <div class="form-group col-md-6 col-sm-6">
                                                 <label >Zip/Postal Code <em>*</em></label>
                                                 <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
+                                            </div>
+                                            <div class="form-group col-md-6 col-sm-6">
                                                 <label >Email <em>*</em></label>
                                                 <input required type="text" class="input-text">
-                                            </li>
-                                            <li class="col-md-6 col-sm-6">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 col-sm-6">
                                                 <label >Phone Number <em>*</em></label>
                                                 <input required type="text" class="input-text">
-                                            </li>
-                                        </ul>
-                                        <div class="buttons-set">
-                                            <button class="btn-green" type="submit"><span><span>Update</span></span></button>
+                                            </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn-green update-button" type="submit">Update</button>
+                                            </div>
+                                          
+                                          </div>
                                     </form>
                                 </div>                                    
                             </div>
@@ -229,7 +202,7 @@
             
             <!-- FOOTER -->
             <footer>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3 col-sm-3 widget-footer">
                             <h5>About Store</h5>
@@ -291,7 +264,7 @@
 
             <!-- FOOTER COPYRIGHT -->
             <div class="footer-bottom">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-7 col-sm-7">
                             <ul class="flinks">
@@ -341,7 +314,7 @@
 		<script src="js/jquery.sticky.js"></script>
 		<script src="js/jquery.subscribe-better.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-		<script src="js/vendors/select/jquery.selectBoxIt.min.js"></script>
+		<!-- <script src="js/vendors/select/jquery.selectBoxIt.min.js"></script> -->
 		<script src="js/main.js"></script>
 
     </body>
