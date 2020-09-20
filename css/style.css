@@ -1626,6 +1626,7 @@ footer {
     overflow-x: hidden !important;
 }
 
+
 .cart-info:after {
     content: "";
     height: 12px;
@@ -3474,8 +3475,13 @@ color: #000000;
     font-weight: 600;
 }
 
-.logins-buttons-set .btn-green {
-    width: 40%;
+.logins-buttons-set .btn-green-login {
+    width: 43%;
+    padding: 0;
+    margin: 0;
+    background-color: #56C596;
+    border: 0;
+    height: 36px;
 }
 
 .log-reg {
@@ -3530,10 +3536,25 @@ color: #000000;
     top: 0;
     bottom: 0;
     width: 20px;
-    /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat; */
     background: 'f06e';
 }
 
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+   color: white;
+   background-color: red;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url('../vector.svg');
+}
+
+.form-list input[type=checkbox]:checked+label {
+    /* -webkit-appearance: checkbox;
+    background-color: green;  
+    color: #56C596 !important;
+    margin-bottom: -6px; */
+    margin-right: 20px;
+}
 .form-list input[type="checkbox"] {
     margin: 0;
     padding: 9px;
@@ -3547,14 +3568,7 @@ color: #000000;
     background-color: transparent;
     margin-bottom: -6px;
     margin-right: 20px;
-}
-
-.form-list input[type=checkbox]:checked+label {
-    /* -webkit-appearance: checkbox; */
-    background-color: green;
-    color: #56C596 !important;
-    margin-bottom: -6px;
-    margin-right: 20px;
+    /* background-image: url('../vector.svg'); */
 }
 
 .social-login {
@@ -4932,7 +4946,7 @@ color: #FFFFFF;
     border-radius: 4px;
 }
 #account-id{
-    margin-left: 45px;
+    /* margin-left: 45px; */
 }
 
 .account-form4 {
@@ -5379,6 +5393,7 @@ border-radius: 3px;
 /* 22. RESPONSIVE STYLES */
 
 @media (max-width: 1280px) {
+   
     #myModal .modal-lg {
         margin: 15px;
         width: auto;
@@ -5389,9 +5404,22 @@ border-radius: 3px;
     .navbar-default .header-xtra {
         margin-left: 0;
     }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1172px) {
+
+    .business-planes {
+        padding: 0 40px;
+    }
+    .business-planes .pricing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .flinks {
         display: table;
         margin-bottom: -18px;
@@ -5452,6 +5480,12 @@ border-radius: 3px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .business-planes {
+        padding: 0 40px;
+    }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
     .slider-carousel:after, .slider-carousel:before {
         display: none !important;
     }
@@ -5558,6 +5592,12 @@ border-radius: 3px;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
+    .business-planes {
+        padding: 0 40px;
+    }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
     .slider-carousel:after, .slider-carousel:before {
         display: none !important;
     }
@@ -5882,6 +5922,12 @@ border-radius: 3px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .business-planes {
+        padding: 0 40px;
+    }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
     .featured-products .isotope-item {
         width: 50%;
         padding: 0px 15px;
@@ -5889,6 +5935,12 @@ border-radius: 3px;
 }
 
 @media only screen and (max-width: 479px) {
+    .business-planes {
+        padding: 0 40px;
+    }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
     /*new*/
     .featured-products .isotope-item {
         width: 100%;
@@ -6012,19 +6064,32 @@ input[type='checkbox']{
 
 /* ketu ke ate mrrokllen */
 
-.bs-wizard {
+.business-planes{
+    padding: 0 88px;
+   
+}
+
+.row.bs-wizard {
+    margin: auto;
     margin-top: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 100%;
+    max-width: 520px;
 }
 
 /*Form Wizard*/
 
-.bs-wizard {
+/* .bs-wizard {
     width: 100%;
     border-bottom: solid 1px #e0e0e0;
     padding: 0 0 10px 0;
-}
+} */
 
-.bs-wizard>.bs-wizard-step {
+/* .bs-wizard>.bs-wizard-step {
     padding: 0;
     position: relative;
 }
@@ -6115,11 +6180,113 @@ input[type='checkbox']{
 
 .bs-wizard>.bs-wizard-step.disabled a.bs-wizard-dot {
     pointer-events: none;
+} */
+.pricing{
+    /* padding: 88px; */
+}
+.bs-wizard .choose-plan{
+    padding-top: 73px;
+}
+
+.bs-wizard .choose-plan .plan-choose-title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.003em;
+    color: #000000;
+}
+.bs-wizard .choose-plan .plan-choose-subtitle{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
+    color: #000000;
+}
+
+.business-planes .pricing{
+ align-items: center;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.btn-primary.get_started{
+    background: #3E6787;
+    border-radius: 0px 0px 6px 6px;
+    padding: 17px 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
 }
 
 .card-pricing.popular {
     z-index: 1;
     border: 3px solid #007bff;
+}
+.card.card-pricing {
+
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 6px 6px 0px 0px;
+}
+.card-pricing ul>li{
+  
+}
+.card-pricing .type-of-plan{
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.003em;
+    color: #000000;
+}
+.card-pricing .price-of-plan{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.003em;
+    color: #3E6787;
+}
+
+.card-pricing .active-tick-selection {
+    background-image: url('../check-icon-plans.svg');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    margin: 15px;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    padding-left: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+.card-pricing .NotIncludedFeature{
+    background-image: url('../check-icon-plan-opacity.svg');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    margin: 15px;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    padding-left: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
 }
 
 .card-pricing .list-unstyled li {
@@ -6142,7 +6309,212 @@ input[type='checkbox']{
 .inline-btn button {
     padding-right: 50px;
 }
+
+
+.form-bussines-information{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-bussines-information .start-selling{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.003em;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.form-bussines-information .wrapper-information{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    margin: auto;
+    flex-direction: column;
+}
+.wrapper-information .bussines_information_title{
+    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.003em;
+    color: #000000;
+}
+.wrapper-information .business_information_description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.003em;
+    width: 100%;
+    max-width: 355px;
+    color: #000000;
+}
+.wrapper-information .your_business{
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.003em;
+}
+.wrapper-information label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.003em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.wrapper-information .second-title{
+    padding: 42px 0 25px 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.003em;
+}
+.wrapper-information .first{
+    padding-left: 0;
+    /* margin-left: -15px; */
+}
+.wrapper-information .second{
+    padding-right: 0;
+    /* margin-left: -15px; */
+}
+.wrapper-information .submit-business-info .btn-green{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.003em;
+    margin-bottom: 100px;
+   
+}
+.wrapper-information .btn-paypal{
+    text-align: center;
+    background: #3E6787;
+    border-radius: 6px;
+    border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    /* padding: 0 20px; */
+    width: 303px;
+    height: 36px;
+    box-shadow: none;
+}
+
+.wrapper-information .or{
+    margin: 0 24px;
+}
+.wrapper-information .check-paypal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 120px;
+}
+.wrapper-information .check-paypal .btn-green{
+ margin: 0;   
+ height: 36px;
+ text-transform: none;
+}
+
+.form-list .selectboxit-container span, .form-list .selectboxit-container .selectboxit-options a {
+    height: 43px;
+    line-height: 28px;
+}
+.selectboxit-container{
+    display: block;
+}
+#inputStateSelectBoxItOptions{
+   max-width: 100%;
+}
+.selectboxit-text{
+max-width: 100%;
+}
+.selectboxit .form-control .selectboxit-enabled .selectboxit-btn .selectboxit-hover{
+ width: 100%;
+}
+#inputStateSelectBoxIt{
+    width: 100% !important;
+}
+.selectboxit .form-control .selectboxit-enabled .selectboxit-btn{
+    width: 100%;
+}
+
+.wrapper-information-step4{
+    text-align: center;
+}
+.wrapper-information-step4 .fill-step4-check{
+    margin-top: 88px;
+}
+.wrapper-information-step4 .and-were-go{
+    padding-top: 25px; 
+    padding-bottom: 18px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.wrapper-information-step4 .all-done{
+    margin-bottom: 36px;
+}
+.wrapper-information-step4 .confirmation_link{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media (max-width: 992px){
+    .business-planes {
+        padding: 0 40px;
+    }
+.business-planes .pricing {
+    /* flex-direction: column; */
+}
+
+@media (max-width: 1200px){
+    .business-planes {
+        padding: 0;
+    }
+}
+
+@media (max-width: 992px){
+    .business-planes {
+        padding: 0;
+    }
+}
 @media (max-width: 768.98px){
+    .business-planes {
+        padding: 0 40px;
+    }
+
+    .business-planes .pricing{
+        flex-direction: column;
+       }
+
     .tb_right.pull-right{
         float: left !important;
         /* margin: 0 15px; */
@@ -6199,7 +6571,42 @@ input[type='checkbox']{
     }
 }
 
+
 @media (max-width: 575.98px) {
+    .wrapper-information .check-paypal{
+      
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .wrapper-information {
+        padding: 40px 15px;       
+    }
+   
+    .wrapper-information label{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .wrapper-information .first{
+        padding: 0;
+        /* padding-right: 15px;
+       padding-left: 15px; */
+    }
+    .wrapper-information .second{
+       /* padding-right: 15px;
+       padding-left: 15px; */
+       padding: 0;
+    }
+    .wrapper-information .submit-business-info .btn-green{
+        margin-bottom: 30px;
+    }
+
+    .business-planes {
+        padding: 0 15px;
+    }
+    .business-planes .pricing{
+        flex-direction: column;
+       }
     footer{
         padding: 15px;
     }
@@ -6226,12 +6633,12 @@ input[type='checkbox']{
         padding: 0;
         /* padding: 10px 5px; */
         /* display: inline-block; */
-       display: flex;
-     align-items: center;
-     justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-margin: 0;
-padding: 0;
+        margin: 0;
+        padding: 0;
     }
     .tb_center ul li{
         
