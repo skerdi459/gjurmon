@@ -1,3 +1,7 @@
+@import "variables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "node_modules/bootstrap-3-card/sass/card";
 
 .header{
     width: 100%;
@@ -12,18 +16,12 @@
 .businessgood .navbar-brand{
    padding:0 60px;
 }
-.businessgood .input-group{       
-    width: 418px;
-    margin-right: 40px;
-}
-.businessgood .form-group{
-  width: 230px;
-  margin-left: 15px;
-  padding-top: 15px;
-}
+
+
 .businessgood .form-group .first-dropdown .form-control{
     margin-left: 55px;
 }
+
 .businessgood .form-group.second-dropdown .form-control{
     background-color: transparent;
     border: none;
@@ -106,7 +104,7 @@ hr{
     margin: auto;
 }
 .path{
-    padding-left: 15px;
+    /* padding-left: 15px; */
     margin-top: 50px;
     font-family: Inter;
     font-style: normal;
@@ -115,7 +113,37 @@ hr{
     line-height: 22px;
     letter-spacing: 0.003em;
     color: #000000;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+
+}
+
+.sort-dropdown{
+    text-align: right;
+    max-width: ;
+}
+
+.sort-dropdown .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.sort-dropdown label{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.sort-dropdown .form-control{
+    border-radius: 3px;
+    margin-left: 31px;
+    max-width: 178px;
+    background-color: #E6E6E6;
+    padding: 8px 15px;
+    height: unset;
+    border-color: #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #E6E6E6;
+    border-width: 2px;
+    background: #E6E6E6;
 
 }
 
@@ -130,6 +158,38 @@ hr{
     box-sizing: border-box;
     border-radius: 3px;
 }
+/* 
+.businessgood .features{
+    background-color: lawngreen;
+} */
+
+.businessgood .features ul{
+    display: inline-block;
+
+}
+.businessgood .features ul li{
+    display: inline-block;
+}
+
+.businessgood .features ul li.has-new-badge{
+    position: relative;
+}
+.businessgood .features ul li.has-new-badge::before{
+    top: -10px;
+    left: 15px;
+    position: absolute;
+    content: "New";
+    display: block;
+    height: auto;
+    /* background-color: red; */
+    font-size: 9px;
+    color: #FFFFFF;
+    /* padding: 4px; */
+    background-image: url("/new-badge.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:23px;
+}
 
 .title{
     font-family: Inter;
@@ -141,23 +201,26 @@ hr{
 
     color: #000000;
 }
+
 .cards-wrapper{
-    margin-top: 46px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin: 20px 0 0;
 }
+
 .cards-wrapper .card{
-    max-width: 330px;
+   width: 100%;
    margin-bottom: 40px;
+}
+
+.cards-wrapper .card img{
+    width: 100%;
+    height: auto;
 }
 
 .card-body .fa{
     width: 13px;
     height: 13px;
     margin: 0 2.5px;
- color: #D8D8D8;
+    color: #D8D8D8;
 }
 .card-body .checked .fa{
     color: #3E6787;
@@ -211,3 +274,44 @@ hr{
     padding: 5px 0;
     opacity: 0.8;
 }
+.title-sort{
+    /* margin: 0 150px; */
+}
+.pagination-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.pagination-wraper .pagination{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.pagination > li > a, .pagination > li > span {  
+    padding: 0 5px;
+    border: 0;
+    border-right: 1px solid #BEBEBE;
+    background-color: transparent;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+     border-top-right-radius: 0; 
+     border-bottom-right-radius: 0; 
+     border: 0;
+}
+
+/* .pagination-wraper .pagination li{
+    padding: 0 5px;
+    border-right: 1px solid #BEBEBE;
+}
+.pagination-wraper .pagination li:last-child{
+    padding: 0 5px;
+    border-right:0;
+} */
