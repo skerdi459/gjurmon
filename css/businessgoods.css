@@ -1,46 +1,46 @@
 @import "variables";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
 @import "node_modules/bootstrap-3-card/sass/card";
-
-.header{
+.header {
     width: 100%;
     background-color: green;
 }
-.businessgood .navbar{
-   
-   max-width: 1500px;
+
+.businessgood .navbar {
+    max-width: 1500px;
     margin: auto;
 }
 
-.businessgood .navbar-brand{
-   padding:0 60px;
+.businessgood .navbar-brand {
+    padding: 0 60px;
 }
 
-
-.businessgood .form-group .first-dropdown .form-control{
+.businessgood .form-group .first-dropdown .form-control {
     margin-left: 55px;
 }
 
-.businessgood .form-group.second-dropdown .form-control{
+.businessgood .form-group.second-dropdown .form-control {
     background-color: transparent;
     border: none;
     width: auto;
-    margin: 0;  
-    padding-left:0 ;
+    margin: 0;
+    padding-left: 0;
     color: white;
 }
-.businessgood .fa{
+
+.businessgood .fa {
     color: white;
 }
-.businessgood .fa-bell-o{
+
+.businessgood .fa-bell-o {
     margin-left: 53px;
 }
-.businessgood .fa-shopping-cart{
+
+.businessgood .fa-shopping-cart {
     margin-left: 23px;
 }
 
-.businessgood .myBag{
+.businessgood .myBag {
     max-width: 100px;
     font-family: Inter;
     font-weight: 500;
@@ -50,6 +50,7 @@
     margin-left: 16px;
     color: #FFFFFF;
 }
+
 .businessgood .vl {
     border-left: 1px solid white;
     height: 35px;
@@ -60,10 +61,10 @@
     max-width: 1440px;
 }
 
-.businessgood .diff-products{
+.businessgood .diff-products {
     text-decoration: none;
     color: black;
-    padding: 17px 40px ;
+    padding: 17px 40px;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -71,9 +72,9 @@
     line-height: 17px;
     letter-spacing: 0.003em;
     opacity: 0.8;
-
 }
-.businessgood .diff-products-first{
+
+.businessgood .diff-products-first {
     text-decoration: none;
     color: black;
     font-family: Inter;
@@ -83,12 +84,13 @@
     line-height: 17px;
     letter-spacing: 0.003em;
     opacity: 0.8;
-
 }
-hr{
+
+hr {
     max-width: 100%;
 }
-.businessgood .diff-products-last{
+
+.businessgood .diff-products-last {
     text-decoration: none;
     color: black;
     font-family: Inter;
@@ -98,12 +100,13 @@ hr{
     line-height: 17px;
     letter-spacing: 0.003em;
     opacity: 0.8;
-
 }
-.row{
+
+.row {
     margin: auto;
 }
-.path{
+
+.path {
     /* padding-left: 15px; */
     margin-top: 50px;
     font-family: Inter;
@@ -114,26 +117,25 @@ hr{
     letter-spacing: 0.003em;
     color: #000000;
     /* opacity: 0.8; */
-
 }
 
-.sort-dropdown{
+.sort-dropdown {
     text-align: right;
     max-width: ;
 }
 
-.sort-dropdown .form-group{
+.sort-dropdown .form-group {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
-.sort-dropdown label{
+
+.sort-dropdown label {
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.sort-dropdown .form-control{
+.sort-dropdown .form-control {
     border-radius: 3px;
     margin-left: 31px;
     max-width: 178px;
@@ -144,15 +146,13 @@ hr{
     box-shadow: 0px 0px 0px 1px #E6E6E6;
     border-width: 2px;
     background: #E6E6E6;
-
 }
 
-.businessgood .input-group.sort-dropdn .form-control{
+.businessgood .input-group.sort-dropdn .form-control {
     margin: 0;
     margin-top: -10px;
     margin-left: 40px;
     max-width: 178px !important;
-   
     background: #E6E6E6;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -160,21 +160,22 @@ hr{
 }
 /* 
 .businessgood .features{
-    background-color: lawngreen;
+background-color: lawngreen;
 } */
 
-.businessgood .features ul{
-    display: inline-block;
-
-}
-.businessgood .features ul li{
+.businessgood .features ul {
     display: inline-block;
 }
 
-.businessgood .features ul li.has-new-badge{
+.businessgood .features ul li {
+    display: inline-block;
+}
+
+.businessgood .features ul li.has-new-badge {
     position: relative;
 }
-.businessgood .features ul li.has-new-badge::before{
+
+.businessgood .features ul li.has-new-badge::before {
     top: -10px;
     left: 15px;
     position: absolute;
@@ -188,59 +189,59 @@ hr{
     background-image: url("/new-badge.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width:23px;
+    width: 23px;
 }
 
-.title{
+.title {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.003em;
-
     color: #000000;
 }
 
-.cards-wrapper{
+.cards-wrapper {
     margin: 20px 0 0;
 }
 
-.cards-wrapper .card{
-   width: 100%;
-   margin-bottom: 40px;
+.cards-wrapper .card {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.cards-wrapper .card img{
+.cards-wrapper .card img {
     width: 100%;
     height: auto;
 }
 
-.card-body .fa{
+.card-body .fa {
     width: 13px;
     height: 13px;
     margin: 0 2.5px;
     color: #D8D8D8;
 }
-.card-body .checked .fa{
+
+.card-body .checked .fa {
     color: #3E6787;
 }
 
-.dollar{
+.dollar {
     float: right;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-
     letter-spacing: 0.003em;
-
     color: #3E6787;
 }
-.number{
+
+.number {
     margin-left: 10px;
 }
-.card-title{
+
+.card-title {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -251,7 +252,7 @@ hr{
     padding: 15px 0 0;
 }
 
-.offerts{
+.offerts {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -259,11 +260,10 @@ hr{
     line-height: 13px;
     margin: 0;
     color: #000000;
-
     opacity: 0.8;
 }
 
-.address{
+.address {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -274,20 +274,25 @@ hr{
     padding: 5px 0;
     opacity: 0.8;
 }
-.title-sort{
+
+.title-sort {
     /* margin: 0 150px; */
 }
-.pagination-wraper{
+
+.pagination-wraper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.pagination-wraper .pagination{
+
+.pagination-wraper .pagination {
     padding-left: 20px;
     padding-bottom: 10px;
 }
-.pagination > li > a, .pagination > li > span {  
+
+.pagination>li>a,
+.pagination>li>span {
     padding: 0 5px;
     border: 0;
     border-right: 1px solid #BEBEBE;
@@ -301,17 +306,101 @@ hr{
     opacity: 0.6;
 }
 
-.pagination > li:last-child > a, .pagination > li:last-child > span {
-     border-top-right-radius: 0; 
-     border-bottom-right-radius: 0; 
-     border: 0;
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
 }
 
+.main-navigation {
+    padding: 22px 60px;
+    background-image: linear-gradient(to right, #56c596, #369E9E);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+
+.main-navigation .main-logo {
+    flex-basis: 210px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* min-width: 210px; */
+    padding-right: 30px;
+}
+
+.main-navigation .main-nav-search-wrapper {
+    flex-basis: 420px;
+    flex-grow: 1;
+    height: 45px;
+    margin-bottom: 0;
+}
+
+.main-navigation .main-nav-search-wrapper .form-control {
+    border-right: 0;
+    box-shadow: none;
+}
+
+.main-navigation .main-nav-search-wrapper .input-group-btn .btn {
+    height: 45px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    color: #393c51;
+}
+
+.main-navigation .main-nav-search-wrapper .input-group-btn {}
+
+.main-navigation .main-nav-search-wrapper input {
+    height: 45px;
+    width: 100%;
+    max-width: unset;
+}
+
+.main-navigation .main-nav-categories {
+    flex-grow: 1;
+    flex-basis: 230px;
+    margin: 0 28px;
+}
+
+.main-navigation .main-nav-categories {
+    height: 45px;
+}
+
+.main-navigation .main-nav-links {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-navigation .main-nav-links .fa {
+    padding: 5px 7px;
+}
+
+.main-navigation .main-nav-card-dropdown {
+    margin-right: 15px;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 15px;
+}
+
+.main-navigation .dropdown {
+    margin-right: 7px;
+}
+
+.main-navigation .dropdown .btn {
+    background-color: transparent;
+    border: 0;
+    color: #FFFFFF;
+    padding: 0;
+}
 /* .pagination-wraper .pagination li{
-    padding: 0 5px;
-    border-right: 1px solid #BEBEBE;
+padding: 0 5px;
+border-right: 1px solid #BEBEBE;
 }
 .pagination-wraper .pagination li:last-child{
-    padding: 0 5px;
-    border-right:0;
+padding: 0 5px;
+border-right:0;
 } */
